@@ -40,6 +40,7 @@
     justify-content: space-around;
     padding: 50px;
 }
+
 .nav-list{
     display: flex;
     align-items: center;
@@ -53,7 +54,7 @@
 }
 .brand{
     color: #131313;
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 .header-bg-color{
     background-color: rgba(255, 144, 14, 0.1);
@@ -79,4 +80,20 @@
 }
 .banner-image{
     width: 100%;
+}
+
+/* media quary related style for small device */
+@media screen and (max-width: 576px){
+    #nav-parent{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    .nav-list{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .brand{
+        margin-top: 50px;
+    }
 }
