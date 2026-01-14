@@ -28,6 +28,10 @@ main > section{
     margin-top: 130px;
 }
 
+.display-flex{
+    display: flex;
+}
+
 /* dark-2 color */
 .dark-2{
     color: #424242;
@@ -120,6 +124,45 @@ main{
     gap: 24px;
 }
 
+/* fact-card related style */
+#card-section{
+    margin-left: 20px;
+}
+.some-facts-h4{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.card-text-p{
+    line-height: 26px;
+    margin-bottom: 100px;
+    margin-top: 24px;
+}
+
+#fact-card-parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-container{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 241px;
+    height: 241px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.card-text{
+    color: #727272;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
 /* media quary related style for small device */
 @media screen and (max-width: 576px){
     #nav-parent{
@@ -144,6 +187,17 @@ main{
     .quick-list{
         text-align: center;
     }
+    #fact-card-parent{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 70px;
+        gap: 20px;
+    }
+    .card-text-p{
+        text-align: center;
+    }
+    .some-facts-h4{
+        text-align: center;
+    }
 }
 
 /* media quary for meduim device */
@@ -152,6 +206,17 @@ main{
         flex-direction: column;
     }
     .quick-list{
+        text-align: center;
+    }
+    #fact-card-parent{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+        gap: 24px;
+    }
+    .card-text-p{
+        text-align: center;
+    }
+    .some-facts-h4{
         text-align: center;
     }
 }
